@@ -78,10 +78,6 @@
                             <constraint firstAttribute="bottom" secondItem="gdU-K3-uUF" secondAttribute="bottom" id="xcI-6S-Dc0"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="gdU-K3-uUF" id="RPM-Ic-fUd"/>
-                        <outlet property="swoosh" destination="QB7-N6-ZJv" id="bZu-8o-HH3"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,6 +118,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Men">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onMenstapped:" destination="6jF-Fo-InH" eventType="touchUpInside" id="VMY-EV-sds"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I84-e7-nIp" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="81.333333333333314" width="353" height="55.333333333333343"/>
@@ -130,6 +129,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Womens">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="6jF-Fo-InH" eventType="touchUpInside" id="Ufs-59-9OS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oy-Tf-PZJ" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="162.66666666666666" width="353" height="55.333333333333343"/>
@@ -138,10 +140,13 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Co-ed">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="6jF-Fo-InH" eventType="touchUpInside" id="N75-8V-BvZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET5-B9-CHi" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET5-B9-CHi" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="780" width="353" height="47"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.34180980960000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -156,9 +161,6 @@
                                 <rect key="frame" x="20" y="100" width="53" height="38"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="backButton"/>
-                                <connections>
-                                    <segue destination="ziA-RG-Hx5" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="IKz-ch-Oe4"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pwb-W3-66u"/>
@@ -186,11 +188,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="Mqb-fn-Czn"/>
                     <connections>
+                        <outlet property="nextBtn" destination="ET5-B9-CHi" id="7MO-gS-Gsf"/>
                         <segue destination="vaN-n0-3dD" kind="show" identifier="skillVCSegue" id="u04-f5-ky9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Kv-06-or2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="ziA-RG-Hx5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="826.71755725190837" y="-7.042253521126761"/>
         </scene>

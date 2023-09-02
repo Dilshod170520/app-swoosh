@@ -16,6 +16,7 @@
 		52A8399A2AA209EB00E117DA /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A839992AA209EB00E117DA /* BorderButton.swift */; };
 		52C54D402AA2532E00C332CB /* LeagueVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C54D3F2AA2532E00C332CB /* LeagueVCViewController.swift */; };
 		52C54D422AA2534200C332CB /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C54D412AA2534200C332CB /* SkillVC.swift */; };
+		52DAFCB32AA302E4002DF937 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAFCB22AA302E4002DF937 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		52A839992AA209EB00E117DA /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		52C54D3F2AA2532E00C332CB /* LeagueVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVCViewController.swift; sourceTree = "<group>"; };
 		52C54D412AA2534200C332CB /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
+		52DAFCB22AA302E4002DF937 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		52C54D3E2AA2528700C332CB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				52DAFCB22AA302E4002DF937 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				52A839852AA2031300E117DA /* AppDelegate.swift in Sources */,
 				52A839872AA2031300E117DA /* SceneDelegate.swift in Sources */,
 				52A8399A2AA209EB00E117DA /* BorderButton.swift in Sources */,
+				52DAFCB32AA302E4002DF937 /* Player.swift in Sources */,
 				52C54D422AA2534200C332CB /* SkillVC.swift in Sources */,
 				52C54D402AA2532E00C332CB /* LeagueVCViewController.swift in Sources */,
 			);

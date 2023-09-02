@@ -9,15 +9,34 @@ import UIKit
 
 class LeagueVCViewController: UIViewController {
 
+    var player: Player!
+
+    @IBOutlet weak var nextBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        player = Player()
     }
     
     @IBAction func nextBtnTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "skillVCSegue", sender: self)
     }
     
-
+    @IBAction func onCoedTapped(_ sender: Any) {
+        selectLegue(leagueType: "Co-ed")
+        
+    }
+    @IBAction func onMenstapped(_ sender: Any) {
+        selectLegue(leagueType: "Mens")
+    }
+    
+    @IBAction func onWomensTapped(_ sender: Any) {
+        selectLegue(leagueType: "Womens")
+    }
+    
+    func selectLegue( leagueType: String ) {
+        player.desiredLeague = leagueType
+        nextBtn.isEnabled = true
+    }
 }
