@@ -149,7 +149,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="vaN-n0-3dD" kind="show" id="3RC-gU-Dt9"/>
+                                    <action selector="nextBtnTapped:" destination="6jF-Fo-InH" eventType="touchUpInside" id="g97-mR-5SQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8o-fd-BUx">
@@ -185,6 +185,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mqb-fn-Czn"/>
+                    <connections>
+                        <segue destination="vaN-n0-3dD" kind="show" identifier="skillVCSegue" id="u04-f5-ky9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Kv-06-or2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ziA-RG-Hx5" userLabel="Exit" sceneMemberID="exit"/>
@@ -274,7 +277,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XHr-9k-hX7"/>
+        <segue reference="73H-FE-5Na"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="backButton" width="29" height="24"/>
