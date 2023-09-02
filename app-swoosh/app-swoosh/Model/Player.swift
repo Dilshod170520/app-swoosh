@@ -8,6 +8,6 @@
 import Foundation
 
 struct Player {
-    var desiredLeague: String?
-    var seletedSkellLevel: String?
+    var desiredLeague: String!
+    var seletedSkellLevel: String!
 }
